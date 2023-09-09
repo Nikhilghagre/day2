@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,.main{
+width: 100%;
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url('fonts/Prompt-Regular.woff2') ; 
+}
+
+@font-face {
+    font-family: Rowdies;
+    src: url('fonts/Rowdies-Regular.woff2') ; 
+}
+
+.nav-bar{
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    
+}
+.nav-bar img{
+   width: 20vw; 
+}
+.nav-bar h4{
+    font-size: 20px;
+    font-family: Prompt;
+ }
+.section{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/back_page.webp');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-container{
+    height: 100vh;
+    padding: 0 50px;
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+.img-sub-conatiner2 img{
+    width: 15vw;
+}
+
+.img-sub-conatiner3{
+    display: flex;
+    flex-direction: column;
+}
+
+.row1,.row2,.row3{
+ 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.frame-img{
+display: flex;
+flex-direction: column;
+position: relative;
+top: -10vh;
+left: -10vw;
+}
+
+#car-img{
+    width: 70%;
+    position: relative;
+    left: -25vh;
+}
+
+.text-container{
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Rowdies;
+}
+
+.text-container h1{
+    font-size: 65px;
+}
+
+.text-container p{
+    width: 80%;
+    font-size: 18px;
+    font-family:Prompt ;
+}
+
+.text-container .btn{
+width: 80%;
+}
+
+.btn button{
+    margin-top: 20px;
+    width: 230px;
+    height: 60px;
+    border-radius: 40px;
+    font-family: Rowdies;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 20px;
+    
+}
+
+.btn button:nth-child(1){
+    background: rgb(93,87,79);
+background: linear-gradient(231deg, rgba(93,87,79,1) 23%, rgba(35,45,51,1) 90%);
+color: #fff0d8;
+margin-right: 20px;
+}
+
+.btn button:nth-child(2){
+    background: rgb(252, 221, 163);
+background: linear-gradient(231deg, rgb(252, 221, 163) 23%, rgb(255, 242, 216) 90%);
+color: #696055;
+}
+
+
+.second-section{
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    /* height: 100vh; */
+    background: rgb(237,248,255);
+    background: linear-gradient(145deg, rgba(237,248,255,1) 0%, rgba(255,248,224,0.9557072829131653) 63%, rgba(231,255,242,1) 90%);
+}
+
+.small-heading ,.heading{
+    display: flex;
+    position: relative;
+    width: 100%;
+   justify-content: space-between;
+   padding: 10px 40px;
+  
+}
+
+.small-heading{
+    font-size: 12px;
+    font-family:Prompt ;
+}
+.small-heading img{
+    width: 200px;
+}
+
+.heading{
+    margin-bottom: -5px;
+    font-size:3.5vw;
+    font-family: Rowdies;
+    justify-content: flex-end;
+    letter-spacing: 10px;
+    gap: 2.2vw;
+    word-spacing: 18vw;
+}
+
+.slider-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    width: 100%;
+    /* height: 30vh; */
+    position: relative;
+    display: flex;  
+    align-items: center;
+    /* gap: 50px; */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 60%;
+    margin: auto;
+    object-fit: cover;
+
+  }
+
+  .cards{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+  }
+
+  .cards img:hover{
+    scale: 1.2;
+  }
+  .main-slider{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+  }
+
+  .text-card{
+    overflow-y: hidden;
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #f8faf7;
+    font-family: Prompt;
+  }
+  .text-card h3,.text-card h5{
+    font-family: Rowdies;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  .text-card h3{
+    font-size: 28px;
+    margin:5px 0 1px 0;
+  }
+  .text-card h5{
+    font-size: 15px;
+    margin:5px 0 1px 0;
+  }
+  .text-card p{
+    font-family: Prompt;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 2px 0;
+  }
+  .sub-text-card1{
+background-color: #fefffe;
+padding: 20px 0;
+  }
+
+  .sub-text-card{
+    background-color: #fefffe;
+    padding: 10px 0;
+      }
+
+
+ .mobile{
+    width: 20%;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+   bottom: 30px;
+
+ }   
+
+
+
+
+ @media only screen and (max-width: 768px) {
+    .hero{
+        background-image: url('assets/back_page_tablet.webp');
+    }
+
+    .text-container{
+        width: 100vw; 
+        top:20vh;
+        justify-content: flex-start;
+        z-index: 3;
+    
+    }
+    .img-sub-conatiner1 img{
+        width: 20vw;
+        z-index: 3;   
+    }
+    .img-sub-conatiner2 img{
+        width: 40vw;   
+        z-index: 2;
+    }
+    .img-sub-conatiner3 .frame-img{
+        display: none;
+    }
+    
+    .img-sub-conatiner3 .row1{
+        display: none;
+        
+      }
+ 
+    #car-img{
+     scale: 1.5;
+      left: 0;
+    }
+
+    .text-container h1{
+        font-size: 36px;
+    }
+    
+    .text-container p{
+        width: 80%;
+        font-size: 15px;
+        font-family:Prompt ;
+    }
+    
+    .text-container .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .btn button{
+        margin-top: 20px;
+        width: 130px;
+        height: 30px;
+        border-radius:20px;
+        font-family: Rowdies;
+        font-size: 12px;
+        text-align: center;
+        /* margin-right: 20px; */
+        
+    }
+
+    .nav-bar{
+        padding: 20px 20px;
+        
+    }
+    .nav-bar img{
+        width: 200px; 
+     }
+     .nav-bar h4{
+         font-size: 15px;
+         font-family: Prompt;
+      }
+
+/* second section */
+      .heading{
+        word-spacing: -9px;
+        justify-content: space-evenly;
+        align-items: center;
+        letter-spacing: 1px;
+        gap: 0vw;
+        }
+
+      .text-card{
+        overflow-y: hidden;
+        text-align: left;
+        padding: 15px;
+        margin: 10px;
+      }
+      .sub-text-card1{
+        background-color: #fefffe;
+        padding: 5px 0;
+          }
+
+ }
+
+ @media only screen and (max-width: 543px) {
+    .hero{
+        background-image: url('assets/back_page_tablet.webp');
+    }
+
+    .text-container{
+        width: 100vw; 
+        top:20vh;
+        justify-content: flex-start;
+    
+    }
+    .img-sub-conatiner1 img{
+        width: 20vw;   
+    }
+    .img-sub-conatiner2 img{
+        width: 60vw;   
+    }
+    .img-sub-conatiner3{
+        display: none;
+    }
+ 
+
+/* second section */
+    .text-card{
+        overflow-y: hidden;
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+        
+      }
+      .sub-text-card1{
+        background-color: #fefffe;
+        padding: 5px 0;
+        }
+        
+        .mobile{
+            display: none;
+        }
+
+        .small-heading h3{
+            display: none;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 70%;
+            margin: auto;
+            object-fit: cover;
+        
+          }
+          /* .swiper-button-next , .swiper-button-prev{
+            display: none;
+          } */
+ }
